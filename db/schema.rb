@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2021_02_05_074639) do
-
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -38,5 +37,4 @@ ActiveRecord::Schema.define(version: 2021_02_05_074639) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-
 end
